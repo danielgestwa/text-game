@@ -3,6 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Console\Service\AddToModel;
+use App\Models\Location;
 
 class CreateLocations extends Command
 {
@@ -11,20 +13,27 @@ class CreateLocations extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'add:locations';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Add locations to database';
+
+	protected $locations = [
+		[
+			'name' => 'Young Forrest',
+			'description' => 'Forrest with small young trees, that are not taller than a midget'
+		]
+	];
 
     /**
      * Execute the console command.
      */
-    public function handle(): void
+    public function handle(AddToModel $add): void
     {
-        //
+		$add->upsert(Location::class, $this->locations);
     }
 }
