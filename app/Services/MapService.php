@@ -22,9 +22,9 @@ class MapService {
 		'E' => 'W'
 	];
 
-	public function generate(): Collection {
+	public function generate(int $number = 15): Collection {
 
-		$locations = Location::inRandomOrder()->limit(50)->get();
+		$locations = Location::inRandomOrder()->limit($number)->get();
 	
 		$output = collect([]);
 		foreach($locations as $newLocation) {
