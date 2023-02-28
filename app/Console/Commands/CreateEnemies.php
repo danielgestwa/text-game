@@ -27,6 +27,9 @@ class CreateEnemies extends Command
 			'name' => 'Goblin',
 			'description' => 'Small, ugly and smelly creature with big sharp teeth and green crazy eyes',
 			'hp' => 30,
+			'damage' => 10,
+			'lvl' => 1,
+			'handle_weapon' => false,
 			'skills' => '{}'
 		]
 	];

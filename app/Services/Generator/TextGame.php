@@ -7,26 +7,27 @@ use App\Services\MapService;
 use App\Services\EnemyService;
 use App\Services\NpcService;
 use App\Services\QuestService;
+use App\Services\ItemService;
 
 class TextGame implements GameInterface {
 
-	public function generateMap(int $locationNumber) {
-		$mapService = new MapService();
-		return $mapService->generate($locationNumber);
+	public function map(int $number) {
+		return (new MapService)->generate($number);
 	}
 
-	public function generateEnemies(Collection $map, int $enemyNumber) {
-		$enemyService = new EnemyService();
-		return $enemyService->generate($map, $enemyNumber);
+	public function items(int $number, ...$other) {
+		return (new ItemService())->generate($number, ...$other);
 	}
 
-	public function generateQuests(Collection $map, Collection $enemies, int $questNumber) {
-		$questService = new QuestService();
-		return $questService->generate($map, $enemies, $questNumber);
+	public function enemies(int $number, ...$other) {
+		return (new EnemyService)->generate($number, ...$other);
 	}
 
-	public function generateNpcs(Collection $map, Collection $quests, int $npcNumber) {
-		$npcService = new NpcService();
-		return $npcService->generate($map, $quests, $npcNumber);
+	public function quests(int $number, ...$other) {
+		return (new QuestService)->generate($number, ...$other);
+	}
+
+	public function npcs(int $number, ...$other) {
+		return (new NpcService)->generate($number, ...$other);
 	}
 }

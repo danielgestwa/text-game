@@ -7,19 +7,13 @@ use App\Models\Enemy;
 
 class EnemyService {
 
-	public function generate(Collection $map, int $number = 5) {
-
-		$output = collect([]);
+	public function generate(int $number, Collection $map): Collection {
 		$enemies = Enemy::inRandomOrder()->limit($number)->get();
 		foreach($enemies as $enemy) {
-			$location = $map->random();
-			$output->push(array_merge($enemy->toArray(), [
-				'location' => $location['id'],
-				'count' => random_int(1, 5),
-				'item' => null
-			]));
+			$enemy['location'] = $map->random()['id'];
+			$enemy['count'] = random_int(1, 5);
+			$enemy['item'] = $enemy['has_weapon'] ? $item->random()['id'] : null;
 		}
-
-		return $output;
+		return $enemies;
 	}
 }
