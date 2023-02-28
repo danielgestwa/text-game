@@ -22,20 +22,11 @@ class CreateEnemies extends Command
      */
     protected $description = 'Add enemies to database';
 
-	protected $enemies = [
-		[
-			'name' => 'Goblin',
-			'description' => 'Small, ugly and smelly creature with big sharp teeth and green crazy eyes',
-			'hp' => 30,
-			'skills' => '{}'
-		]
-	];
-
     /**
      * Execute the console command.
      */
     public function handle(AddToModel $add): void
     {
-		$add->upsert(Enemy::class, $this->enemies);
+		$add->upsert(Enemy::class, config('enemies'));
     }
 }

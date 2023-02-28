@@ -22,22 +22,11 @@ class CreateNPCs extends Command
      */
     protected $description = 'Add NPCs to database';
 
-	protected $npcs = [
-		[
-			'name' => 'Johnny Joestar',
-			'description' => 'Blonde hair boy with blue eyes. His legs are pralysed and he have a Steel Ball Run sticker on his t-shirt'
-		],
-		[
-			'name' => 'Rachel',
-			'description' => 'Holly molly... That ass is smokin hot! Latte skin with curly short hair and the most beauityfull smile in the world.'
-		]
-	];
-
     /**
      * Execute the console command.
      */
     public function handle(AddToModel $add): void
     {
-		$add->upsert(Npc::class, $this->npcs);
+		$add->upsert(Npc::class, config('npcs'));
     }
 }

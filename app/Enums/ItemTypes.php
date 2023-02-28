@@ -4,6 +4,7 @@ namespace App\Enums;
 
 enum ItemTypes: int {
 	case Weapon = 0;
-	case Food = 1;
-	case Obj = 2;
+	case Eatable = 1;
+	case Chest = 2;
+	case Potion = 3;
 }

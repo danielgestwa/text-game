@@ -23,20 +23,13 @@ class CreateItemWeapons extends Command
      */
     protected $description = 'Add weapons to database';
 
-	protected $items = [
-		[
-			'name' => 'Rusty Sword',
-			'description' => 'Old sword covered with rust',
-			'type' => ItemTypes::Weapon,
-			'effects' => '{ "dmg": 10 }'
-		]	
-	];
+	protected $items;
 
     /**
      * Execute the console command.
      */
     public function handle(AddToModel $add): void
     {
-		$add->upsert(Item::class, $this->items);
+		$add->upsert(Item::class, config('weapons'));
     }
 }
