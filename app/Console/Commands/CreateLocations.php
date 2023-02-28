@@ -22,18 +22,11 @@ class CreateLocations extends Command
      */
     protected $description = 'Add locations to database';
 
-	protected $locations = [
-		[
-			'name' => 'Young Forrest',
-			'description' => 'Forrest with small young trees, that are not taller than a midget'
-		]
-	];
-
     /**
      * Execute the console command.
      */
     public function handle(AddToModel $add): void
     {
-		$add->upsert(Location::class, $this->locations);
+		$add->upsert(Location::class, config('locations'));
     }
 }

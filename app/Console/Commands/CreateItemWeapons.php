@@ -30,6 +30,6 @@ class CreateItemWeapons extends Command
      */
     public function handle(AddToModel $add): void
     {
-		$add->upsert(Item::class, config('weapons.data'));
+		$add->upsert(Item::class, config('weapons'));
     }
 }
