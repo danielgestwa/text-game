@@ -18,6 +18,7 @@ return new class extends Migration
 			$table->string('name');
 			$table->string('description', 255);
 			$table->integer('type');
+			$table->integer('level')->nullable();
 			$table->json('effects');
 			$table->timestamps();
         });

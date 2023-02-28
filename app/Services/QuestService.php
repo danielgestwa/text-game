@@ -30,8 +30,7 @@ class QuestService {
 				$enemy['count'] . ' ' .
 				$enemy['name'] . '/s in ' .
 				$map->where('id', $enemy['location'])->first()['name'];
-			$revards = $items
-					->where('type', ItemTypes::Weapon)
+			$revards = $items['weapons']
 					->where('level', $enemy['level'] + 1);
 			$revard = $revards->isEmpty() ? null : $revards?->random()['id'];
 

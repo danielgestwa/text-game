@@ -11,7 +11,8 @@ class ItemService {
 
 	public function generate(int $number, Collection $map): Collection {		
 		return collect([
-			'chests' => $this->generateChests($number, $map)
+			'chests' => $this->generateChests($number, $map),
+			'weapons' => $this->generateWeapons($number)
 		]);
 	}
 
@@ -32,12 +33,10 @@ class ItemService {
 		return $chests;
 	}
 
-	private function generateWeapons() {
-	}
-
-	private function generateEatables() {
-	}
-
-	private function generatePotions() {
+	private function generateWeapons(int $number) {
+		return Item::where('type', ItemTypes::Weapon)
+			->inRandomOrder()
+			->limit($number)
+			->get();
 	}
 }
