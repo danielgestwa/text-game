@@ -2,11 +2,11 @@
 
 return [	
 	[
-		'name' => 'Young Forrest',
-		'description' => 'Forrest with small young trees, that are not taller than a midget'
+		'name' => 'Młody las',
+		'description' => ''
 	],
 	[
-		'name' => 'Old Template',
+		'name' => 'Stara świątynia',
 		'description' => ''
 	],
 	[
@@ -14,39 +14,39 @@ return [
 		'description' => ''
 	],
 	[
-		'name' => 'Waterfalls',
+		'name' => 'Wodogrzmoty',
 		'description' => ''
 	],
 	[
-		'name' => 'Flower Fields',
+		'name' => 'Pola uprawne',
 		'description' => ''
 	],
 	[
-		'name' => 'Dark Caves',
+		'name' => 'Mroczne jaskinie',
 		'description' => ''
 	],
 	[
-		'name' => 'Wild Beach',
+		'name' => 'Dzika plaża',
 		'description' => ''
 	],
 	[
-		'name' => 'Green Lake',
+		'name' => 'Błotniste stawy',
 		'description' => ''
 	],
 	[
-		'name' => 'Church ruins',
+		'name' => 'Ruiny wieży',
 		'description' => ''
 	],
 	[
-		'name' => 'New Castle',
+		'name' => 'Mury obronne',
 		'description' => ''
 	],
 	[
-		'name' => 'Blue Lagoon',
+		'name' => 'Niebieska laguna',
 		'description' => ''
 	],
 	[
-		'name' => 'Kings Garden',
+		'name' => 'Królewskie ogrody',
 		'description' => ''
 	]
 ];

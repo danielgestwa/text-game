@@ -3,7 +3,7 @@
 return [
 	[
 		'name' => 'Goblin',
-		'description' => 'Small, ugly and smelly creature with big sharp teeth and green crazy eyes',
+		'description' => 'Mała śmierdząca kreatura z złowrogimi zielonymi oczami',
 		'hp' => 10,
 		'damage' => 8,
 		'lvl' => 1,
@@ -11,8 +11,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Wolf',
-		'description' => '',
+		'name' => 'Wilk',
+		'description' => 'Wściekła bestia z najerzonym grzbietem i wielkimi zębiskami',
 		'hp' => 20,
 		'damage' => 12,
 		'lvl' => 2,
@@ -20,8 +20,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Black Reptile',
-		'description' => '',
+		'name' => 'Czarny jaszczur',
+		'description' => 'Gad wielkości dużego psa przypominający raptory',
 		'hp' => 30,
 		'damage' => 16,
 		'lvl' => 3,
@@ -29,8 +29,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Brown Bear',
-		'description' => '',
+		'name' => 'Brązowy niedźwiedź',
+		'description' => 'Przerażająco wielkie stworzenie z pazurami długimi jak szpikulce i ostrymi jak żyletki',
 		'hp' => 32,
 		'damage' => 22,
 		'lvl' => 4,
@@ -38,8 +38,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Vampire',
-		'description' => '',
+		'name' => 'Wampirolud',
+		'description' => 'Człowiek nietoperz. Upośledzone skrzydła nie pozwalają na lot lecz przerośnięte kły, czarne jak smoła oczy i porośnięta futrem skóra wzbudza lęk i obrzydzenie.',
 		'hp' => 40,
 		'damage' => 28,
 		'lvl' => 5,
@@ -47,8 +47,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Ogre',
-		'description' => '',
+		'name' => 'Ogr',
+		'description' => 'Gigantyczny stwór wcale nie przypominający Shreka. Tępy wzrok, wystajace kły i muskularne brudne ciało osłonięte kępkami gęstych włosów przyprawia o mdłości',
 		'hp' => 54,
 		'damage' => 32,
 		'lvl' => 6,
@@ -56,8 +56,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Warewolf',
-		'description' => '',
+		'name' => 'Wilkołak',
+		'description' => 'Przypominający wilka stwór, lecz poruszający się na dwóch łapach. Wyraźnie chudszy, szybszy i bardziej krwiożerczy',
 		'hp' => 60,
 		'damage' => 36,
 		'lvl' => 7,
@@ -65,8 +65,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Mountain Troll',
-		'description' => '',
+		'name' => 'Trol górski',
+		'description' => 'Gigantyczny potwór z wrośniętymi kawałkami skały w różnych częściach ciała. Powolny aczkolwiek niewyobrażalnie silny i okrutny.',
 		'hp' => 72,
 		'damage' => 42,
 		'lvl' => 8,
@@ -74,8 +74,8 @@ return [
 		'skills' => '{}'
 	],
 	[
-		'name' => 'Dragon',
-		'description' => '',
+		'name' => 'Smok ludojad',
+		'description' => 'Najbardziej krwiożercza bestia w całej krainie. Jeśli spotkasz go na swojej drodze uciekaj zanim Cię dopadnie.',
 		'hp' => 81,
 		'damage' => 48,
 		'lvl' => 9,

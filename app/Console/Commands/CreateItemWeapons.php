@@ -3,9 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Enums\ItemTypes;
 use App\Models\Item;
-use App\Console\Service\AddToModel;
+use app\console\service\addtomodel;
 
 class CreateItemWeapons extends Command
 {

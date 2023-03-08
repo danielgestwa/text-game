@@ -3,11 +3,11 @@
 return [
 	[
 		'name' => 'Johnny Joestar',
-		'description' => 'Blonde hair boy with blue eyes. His legs are pralysed and he have a Steel Ball Run sticker on his t-shirt'
+		'description' => 'Młody niebieskooki blondyn. Jego nogi są sparaliżowane, na plecach ma przyklejoną naklejkę z napisem Steel Ball Run'
 	],
 	[
 		'name' => 'Rachel',
-		'description' => 'It looks like she left someone at the altair'
+		'description' => 'Ubrana w białą suknię, wygląda jakby zostawiła kogoś przed ołtarzem'
 	],
 	[
 		'name' => 'Frank',
@@ -18,7 +18,7 @@ return [
 		'description' => ''
 	],
 	[
-		'name' => 'Sarah',
+		'name' => 'Sara',
 		'description' => ''
 	],
 	[
@@ -26,11 +26,11 @@ return [
 		'description' => ''
 	],
 	[
-		'name' => 'Mark',
+		'name' => 'Marek',
 		'description' => ''
 	],
 	[
-		'name' => 'Patric',
+		'name' => 'Patryk',
 		'description' => ''
 	],
 	[

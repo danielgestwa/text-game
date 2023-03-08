@@ -3,6 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Models\Item;
+use App\Console\Service\AddToModel;
 
 class CreateItemObjects extends Command
 {
@@ -11,20 +13,20 @@ class CreateItemObjects extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'add:itemObjects';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Add items (chests, keys, objects) to db';
 
     /**
      * Execute the console command.
      */
-    public function handle(): void
+	public function handle(AddToModel $add): void
     {
-        //
+		$add->upsert(Item::class, config('objects'));
     }
 }

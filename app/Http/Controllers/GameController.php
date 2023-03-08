@@ -11,9 +11,10 @@ class GameController extends Controller
 	public function index(GameInterface $game, GameGenerator $gg) {
 	
 		$gg->generateEasyGame($game);
-		return response()->json(
-			$gg->getResult()
-		);
+		dd($gg->getResult());
+		/* return response()->json( */
+		/* 	$gg->getResult() */
+		/* ); */
 
 	}
 }
