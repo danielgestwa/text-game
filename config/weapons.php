@@ -4,91 +4,91 @@ use App\Enums\ItemTypes;
 
 return [
 	[
-		'name' => 'Stick',
-		'description' => "It's a good stick",
+		'name' => 'Kijek',
+		'description' => "To bardzo dobry kijek",
 		'type' => ItemTypes::Weapon,
 		'level' => 1,
 		'effects' => '{ "dmg": 3 }'
 	],
 	[
-		'name' => 'Rusty Sword',
-		'description' => 'Old sword covered with rust',
+		'name' => 'Zardzewiały miecz',
+		'description' => 'Stary miecz pokryty rdzą',
 		'type' => ItemTypes::Weapon,
 		'level' => 2,
 		'effects' => '{ "dmg": 8 }'
 	],
 	[
-		'name' => 'Blunt Sword',
-		'description' => "Not the sharpest tool in a shead - like it's owner",
+		'name' => 'Tępy miecz',
+		'description' => "Kiedyś był może ostry... Kiedyś",
 		'type' => ItemTypes::Weapon,
 		'level' => 2,
 		'effects' => '{ "dmg": 10 }'
 	],
 	[
-		'name' => 'Short Sword',
-		'description' => 'Good condition sword, small and handy',
+		'name' => 'Krótki miecz',
+		'description' => 'Dobrej kondycji orenż, mały i poręczny',
 		'type' => ItemTypes::Weapon,
 		'level' => 3,
 		'effects' => '{ "dmg": 18 }'
 	],
 	[
-		'name' => 'Short Bow',
-		'description' => 'Good condition bow with decent range',
+		'name' => 'Krótki łuk',
+		'description' => 'Dobry łuk z rozsądnym zasięgiem',
 		'type' => ItemTypes::Weapon,
 		'level' => 3,
 		'effects' => '{ "dmg": 19 }'
 	],
 	[
-		'name' => 'Silver Sword',
-		'description' => 'Not only for a beasts',
+		'name' => 'Srebrny miecz',
+		'description' => 'Nie tylko na potwory',
 		'type' => ItemTypes::Weapon,
 		'level' => 4,
 		'effects' => '{ "dmg": 28 }'
 	],
 	[
-		'name' => 'Long Sword',
+		'name' => 'Długi miecz',
 		'description' => '',
 		'type' => ItemTypes::Weapon,
 		'level' => 4,
 		'effects' => '{ "dmg": 29 }'
 	],
 	[
-		'name' => 'Long Bow',
+		'name' => 'Długi łuk',
 		'description' => '',
 		'type' => ItemTypes::Weapon,
 		'level' => 4,
 		'effects' => '{ "dmg": 29 }'
 	],
 	[
-		'name' => 'Dragon Sword',
+		'name' => 'Kruczy miecz',
 		'description' => '',
 		'type' => ItemTypes::Weapon,
 		'level' => 5,
 		'effects' => '{ "dmg": 36 }'
 	],
 	[
-		'name' => 'Elder Sword',
+		'name' => 'Smoczy miecz',
 		'description' => '',
 		'type' => ItemTypes::Weapon,
 		'level' => 5,
 		'effects' => '{ "dmg": 39 }'
 	],
 	[
-		'name' => 'Epic Sword',
+		'name' => 'Epicki miecz',
 		'description' => '',
 		'type' => ItemTypes::Weapon,
 		'level' => 6,
 		'effects' => '{ "dmg": 50 }'
 	],
 	[
-		'name' => 'Legendary Sword',
+		'name' => 'Legendarny miecz',
 		'description' => '',
 		'type' => ItemTypes::Weapon,
 		'level' => 7,
 		'effects' => '{ "dmg": 65 }'
 	],
 	[
-		'name' => 'God Sword',
+		'name' => 'Miecz Boży',
 		'description' => '',
 		'type' => ItemTypes::Weapon,
 		'level' => 8,
