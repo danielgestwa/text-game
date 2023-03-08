@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use App\Models\Item;
-use app\console\service\addtomodel;
+use App\Console\Service\AddToModel;
 
 class CreateItemWeapons extends Command
 {
