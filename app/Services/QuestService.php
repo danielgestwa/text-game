@@ -5,34 +5,36 @@ namespace App\Services;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use App\Enums\ItemTypes;
+use App\Models\Item;
 
 class QuestService {
 
 	private $names = [
-		'slayer',
-		'issue',
-		'hunt',
-		'job',
-		'bounty',
-		'case'
+		'Ubicie potwora',
+		'Problem z dziką kreaturą',
+		'Polowanie na zwierza',
+		'Brudna robota',
+		'Nagroda za schwytanie',
+		'Trudna sprawa z bestią'
 	];
 
 	public function __construct() {
 		$this->names = collect($this->names);
 	}
 
-	public function generate(int $number, Collection $map, Collection $enemies, Collection $items): Collection {
+	public function generate(int $number, Collection $map, Collection $enemies): Collection {
 		$quests = collect([]);
 		foreach($enemies as $enemy) {
 
-			$name = $enemy['name'] . ' ' . $this->names->random();
-			$description = 'Kill ' .
-				$enemy['count'] . ' ' .
-				$enemy['name'] . '/s in ' .
+			$name = $this->names->random();
+			$description = 'Zabij ' .
+				$enemy['count'] . 'x ' .
+				$enemy['name'] . ' w ' .
 				$map->where('id', $enemy['location'])->first()['name'];
-			$revards = $items['weapons']
-					->where('level', $enemy['level'] + 1);
-			$revard = $revards->isEmpty() ? null : $revards?->random()['id'];
+			$revard = Item::where('type', ItemTypes::Weapon)
+				->where('level', $enemy['level'] + 1)
+				->inRandomOrder()
+				->first() ?? null;
 
 			$quests->push([
 				'id' => (string) Str::uuid(),

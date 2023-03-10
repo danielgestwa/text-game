@@ -6,7 +6,7 @@ return [
 		'description' => 'Mała śmierdząca kreatura z złowrogimi zielonymi oczami',
 		'hp' => 10,
 		'damage' => 8,
-		'lvl' => 1,
+		'level' => 1,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -15,7 +15,7 @@ return [
 		'description' => 'Wściekła bestia z najerzonym grzbietem i wielkimi zębiskami',
 		'hp' => 20,
 		'damage' => 12,
-		'lvl' => 2,
+		'level' => 2,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -24,7 +24,7 @@ return [
 		'description' => 'Gad wielkości dużego psa przypominający raptory',
 		'hp' => 30,
 		'damage' => 16,
-		'lvl' => 3,
+		'level' => 3,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -33,7 +33,7 @@ return [
 		'description' => 'Przerażająco wielkie stworzenie z pazurami długimi jak szpikulce i ostrymi jak żyletki',
 		'hp' => 32,
 		'damage' => 22,
-		'lvl' => 4,
+		'level' => 4,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -42,7 +42,7 @@ return [
 		'description' => 'Człowiek nietoperz. Upośledzone skrzydła nie pozwalają na lot lecz przerośnięte kły, czarne jak smoła oczy i porośnięta futrem skóra wzbudza lęk i obrzydzenie.',
 		'hp' => 40,
 		'damage' => 28,
-		'lvl' => 5,
+		'level' => 5,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -51,7 +51,7 @@ return [
 		'description' => 'Gigantyczny stwór wcale nie przypominający Shreka. Tępy wzrok, wystajace kły i muskularne brudne ciało osłonięte kępkami gęstych włosów przyprawia o mdłości',
 		'hp' => 54,
 		'damage' => 32,
-		'lvl' => 6,
+		'level' => 6,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -60,7 +60,7 @@ return [
 		'description' => 'Przypominający wilka stwór, lecz poruszający się na dwóch łapach. Wyraźnie chudszy, szybszy i bardziej krwiożerczy',
 		'hp' => 60,
 		'damage' => 36,
-		'lvl' => 7,
+		'level' => 7,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -69,7 +69,7 @@ return [
 		'description' => 'Gigantyczny potwór z wrośniętymi kawałkami skały w różnych częściach ciała. Powolny aczkolwiek niewyobrażalnie silny i okrutny.',
 		'hp' => 72,
 		'damage' => 42,
-		'lvl' => 8,
+		'level' => 8,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	],
@@ -78,7 +78,7 @@ return [
 		'description' => 'Najbardziej krwiożercza bestia w całej krainie. Jeśli spotkasz go na swojej drodze uciekaj zanim Cię dopadnie.',
 		'hp' => 81,
 		'damage' => 48,
-		'lvl' => 9,
+		'level' => 9,
 		'handle_weapon' => false,
 		'skills' => '{}'
 	]	

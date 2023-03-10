@@ -13,8 +13,8 @@ class GameGenerator {
 	public function generateEasyGame(GameInterface $game): void {
 		$this->map = $game->map(8);
 		$this->items = $game->items(3, $this->map);
-		$this->enemies = $game->enemies(4, $this->map, $this->items);
-		$this->quests = $game->quests(3, $this->map, $this->enemies, $this->items);
+		$this->enemies = $game->enemies(4, $this->map);
+		$this->quests = $game->quests(3, $this->map, $this->enemies);
 		$this->npcs = $game->npcs(3, $this->map, $this->quests);
 	}
 

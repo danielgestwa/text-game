@@ -22,13 +22,13 @@ class CreateItemWeapons extends Command
      */
     protected $description = 'Add weapons to database';
 
-	protected $items;
+	  protected $items;
 
     /**
      * Execute the console command.
      */
     public function handle(AddToModel $add): void
     {
-		$add->upsert(Item::class, config('weapons'));
+      $add->upsert(Item::class, config('weapons'));
     }
 }

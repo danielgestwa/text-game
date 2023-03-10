@@ -19,7 +19,7 @@ return new class extends Migration
 			$table->string('description', 255);
 			$table->integer('hp');
 			$table->integer('damage');
-			$table->integer('lvl');
+			$table->integer('level');
 			$table->boolean('handle_weapon');
 			$table->json('skills');
             $table->timestamps();
